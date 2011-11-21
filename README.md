@@ -12,7 +12,7 @@ Setup:
   * copy down the consumer key and consumer secret
   * export those values into your shell environment like
     * bash: export TWITTER_KEY = ... ; export TWITTER_SECRET = ..
-  * ```bundle install`
+  * ```bundle install```
   * ```rake db:migrate```
   * ```rails server```
 
