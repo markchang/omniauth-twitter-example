@@ -1,0 +1,22 @@
+%p
+	Hello, world.
+
+- if current_user
+	%p
+		Your info:
+		%ul
+			%li= current_user.uid
+			%li= current_user.name
+			%li= current_user.nickname
+			%li= current_user.token
+			%li= current_user.secret
+			
+		Tweet something
+			
+		%form{:name => "tweet", :action => "/tweet"}
+			%input{:type => "text", :name => "message", :class => "text"}
+			%input{:type => "submit", :value => "Tweet", :class => "button"}
+	    
+
+- else
+	%p You are not logged in.
